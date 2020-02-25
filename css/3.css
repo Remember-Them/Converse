@@ -1,0 +1,1056 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+}
+#right dd.user {
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	margin-left: 5px;
+	float: left;
+	display: none;
+	font-weight: bold;
+	line-height: 78px;
+}
+input:focus { outline: none; }
+button:focus { outline: none; }
+body {
+	min-width: 1000px;
+	z-index: 4;
+}
+u{text-decoration: underline;}
+
+/*#yinying{width: 100%;height: 100%;    transition: .3s all; opacity: 0;background:rgba(0,0,0,0.6);z-index: 599;}*/
+dd.show{height: 20px;}
+
+#llb {
+	width: 88px;
+	height: 88px;
+	position: fixed;
+	z-index: 99999;
+	right: 0px;
+	top: 200px;
+}
+
+#top {
+	min-width: 100%;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background: black;
+}
+
+#header a.logo img {
+	margin-left: 64px;
+	margin-top: 25px;
+}
+
+#right {
+	width: 555px;
+	float: right;
+	display: inline-block;
+}
+
+#right a.LandRegistration dd {
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	margin-left: 5px;
+	float: left;
+	line-height: 78px;
+}
+
+#right a.LandRegistration dd:hover {
+	text-decoration: underline;
+}
+
+#right dd.landregistra_hid {
+	width: 32px;
+	height: 32px;
+	margin-left: 16px;
+	margin-top: 24px;
+	float: left;
+	background: url(../img/yh.png) no-repeat 50% 50%;
+}
+
+#right dd.shoppCar {
+	float: left;
+	font-size: 10px;
+	line-height: 78px;
+	margin-left: 30px;
+	margin-right: 18px;
+}
+
+#right dd.shoppCar a {
+	color: white;
+}
+
+#right dd.shoppCar:hover {
+	text-decoration: underline;
+}
+
+#right dd.Car {
+	float: left;
+	margin-top: 24px;
+}
+
+#right dd.chat_hid {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-top: 24px;
+	margin-left: 48px;
+	background: url(../img/lt.png)no-repeat 50% 50%;
+}
+
+#right dd.search_hid {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-top: 24px;
+	margin-left: 48px;
+	background: url(../img/ss.png)no-repeat 50% 50%;
+}
+
+#right dd.help_hid {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-top: 24px;
+	margin-left: 48px;
+	background: url(../img/wh.png)no-repeat 50% 50%;
+}
+
+a.landregistraup,
+a.chatup,
+a.searchup,
+a.helpup {
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: rgba(255, 255, 255, 0.58);
+	border-radius: 32px;
+	display: none;
+}
+
+#LandRegistration {
+	display: none;
+	width: 100%;
+	height: 400px;
+	background: white;
+	overflow: hidden;
+	position: relative;
+}
+
+#black {
+	display: none;
+	width: 30px;
+	height: 17px;
+	background: url(../img/jtblack.png) no-repeat;
+	margin-left: 881px;
+	margin-top: 0px;
+}
+
+#auto {
+	width: 1000px;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 18px;
+	display: none;
+}	
+
+#lefter {
+	width: 210px;
+	height: 315px;
+	border-right: solid 1px #999999;
+	float: left;
+}
+
+#lefter h2 {
+	font-weight: normal;
+	color: #333333;
+}
+
+#lefter button {
+	cursor: pointer;
+	width: 150px;
+	height: 40px;
+	background: black;
+	border: solid #C6C6C6 1px;
+	margin-top: 20px;
+}
+
+#lefter button p {
+	color: white;
+	font-size: 18px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 25px;
+}
+
+#lefter button img {
+	float: right;
+	margin-right: 25px;
+}
+
+#content {
+	width: 420px;
+	height: 315px;
+	border-right: solid 1px #999999;
+	float: left;
+}
+
+#content h2 {
+	font-weight: normal;
+	color: #333333;
+	margin-left: 60px;
+}
+
+#content img.wb{
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+#content img.zfb {
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+#righter {
+	width: 360px;
+	height: 315px;
+	float: left;
+	position: relative;
+}
+
+#righter h2 {
+	font-weight: normal;
+	color: #333333;
+	margin-left: 60px;
+}
+
+#righter input.input {
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	border: solid #999999 1px;
+	text-indent: 20px;
+	margin-left: 60px;
+}
+
+#righter button.converse {
+	border: solid 1px#CCCCCC;
+	width: 300px;
+	height: 43px;
+	margin-left: 60px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #FEFEFE, #F3F3F3);
+}
+
+#suprice {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: solid 1px black;
+	background: url(../img/converse.png) no-repeat;
+	-webkit-background-size: 40px 40px;
+	-moz-background-size: 40px 40px;
+	background-size: 40px 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	animation-iteration-count: 99;
+}
+
+@keyframes mymove {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+
+#righter button.converse p {
+	width: 200px;
+	line-height: 40px;
+	font-size: 15px;
+	color: #464646;
+}
+
+#righter dd {
+	
+	width: 300px;
+	font-size: 12px;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+#righter button.dl {
+	cursor: pointer;
+	border: solid #C6C6C6 1px;
+	width: 300px;
+	height: 40px;
+	background: black;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+#righter button.dl p {
+	float: left;
+	color: white;
+	font-size: 18px;
+	text-indent: 115px;
+	line-height: 40px;
+}
+
+#righter button.dl img {
+	float: right;
+	margin-right: 115px;
+}
+
+#righter input.input1 {
+	margin-left: 60px;
+	width: 23px;
+	height: 23px;
+	position: relative;
+	visibility: hidden;
+}
+
+#righter label {
+	width: 20px;
+	height: 20px;
+	border: solid 2px black;
+	position: absolute;
+	left: 58px;
+	z-index: 0;
+}
+
+.input1:checked+label {
+	background: url(../img/dui.png);
+}
+
+#righter span {
+	font-size: 14px;
+}
+
+#righter dd.lin {
+	float: right;
+	width: 270px;
+	margin-left: 30px;
+	margin-top: -25px;
+}
+
+#righter dd.lin u{
+	margin-left: 125px;
+	font-size: 14px;
+}
+
+dd[class$=hid]:hover a[class$=up] {
+	display: block;
+}
+
+#autoo {
+	display: none;
+	color: #333333;
+	width: 1000px;
+	height: 315px;
+	margin: 0px auto;
+	margin-top: 18px;
+}
+
+#autoo dl {
+	float: left;
+	width: 300px;
+	height: 90px;
+}
+
+dl.email,
+dl.sex,
+dl.pas2,
+dl.date,
+dl.get,
+dl.goto {
+	margin-left: 45px;
+}
+
+#autoo dt {
+	font-size: 14px;
+}
+
+#autoo dt span {
+	color: red;
+}
+
+dl.phone input,
+dl.email input,
+dl.pas1 input,
+dl.pas2 input {
+	width: 300px;
+	height: 40px;
+	border: solid 1px #999999;
+	text-indent: 20px;
+	margin-top: 10px;
+}
+
+dl.sex {
+	font-size: 14px;
+}
+
+dl.sex input {
+	visibility: hidden;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.gosradio+label {
+	width: 20px;
+	height: 20px;
+	border: solid 2px black;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.gosradio:checked+label {
+	background: url(../img/dui.png)no-repeat;
+}
+dl.date form select{width: 90px;height: 40px;border: solid 1px #999999;margin-top: 10px;}
+
+dl.test button {
+	width: 300px;
+	height: 43px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: linear-gradient(to bottom, #FEFEFE, #F3F3F3);
+}
+
+dl.test button p {
+	width: 200px;
+	line-height: 40px;
+	font-size: 15px;
+	color: #464646;
+}
+
+dl.get dd{float: left;}
+.code 
+{
+ font-family:Arial;
+ font-style:italic;
+ color:black;
+ font-size:20px;
+ letter-spacing:2px;
+ font-weight:bolder;
+ cursor:pointer;
+ width:50px;
+ height:30px;
+ line-height:60px;
+float: left;
+margin-top: -15px;
+margin-left: 60px;
+ text-align:center;
+ vertical-align:middle;
+}
+dl.get input.manner1{width: 150px;height: 40px;border: solid 1px #999999;
+	text-indent: 20px;
+	margin-top: 10px;}
+dl.get input.manner2{width: 140px;height: 40px;background: #848484;color: white;margin-left: 3px;}
+#autoo dl.goto dt{font-size: 10px;}
+#autoo dl.goto dt u{text-decoration: underline;}
+#autoo dl.goto dd button.gogo{width:  300px; height: 42px;background: black;margin-top: 10px;cursor: pointer;border: solid 1px #999999;}
+#autoo dl.goto dd button.gogo p.pp{float: left; color: white;font-size: 18px;text-indent: 100px; line-height: 40px;}
+#autoo dl.goto dd button.gogo img.gogogo{margin-left: -100px;height: 40px;}
+
+#LandRegistrations {
+	display: none;
+	width: 100%;
+	height: 280px;
+	background: white;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+#car{width: 1000px;
+display: none;
+color: #333333;
+	height: 260px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+#car .gods{
+	float: left;
+	border: solid 1px white;
+	width: 160px;
+	height: 160px;
+	margin-top: 100px;
+}
+#car .godssee{
+	width: 300px;
+	height: 32px;
+	font-size: 30px;
+	border: solid 1px white;
+	margin-left: 190px;
+	margin-top: 20px;
+}
+#car .godsone{
+	width: 550px;
+	height: 180px;
+	border: solid 1px white;
+	margin-left: 190px;
+	margin-top: 20px;
+}
+#car .godsname{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	width: 450px;
+	height: 30px;
+border: solid 1px white;
+}
+#car .godsprice{
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	border: solid 1px white;
+}
+#car .Model{
+	margin-top: 60px;
+	font-size: 14px;
+	width: 180px;
+	height: 20px;
+border: solid 1px white;
+}
+#car .color{
+	font-size: 14px;
+	margin-top: 5px;
+	width: 180px;
+	height: 20px;
+border: solid 1px white;
+}
+#car .godssize{
+	margin-top: 5px;
+	width: 180px;
+	height: 20px;
+	border: solid 1px white;
+}
+#car .godsnum{
+	margin-top: 5px;
+	width: 180px;
+	height: 20px;
+border: solid 1px white;
+}
+
+#car .all{
+	margin-top: -220px;
+	width: 250px;
+	height: 220px;
+border: solid 1px white;
+	float: right;
+}
+
+#car .close{
+	width: 35px;
+	height: 35px;
+	border: solid 1px white;
+	float: right;
+}
+
+#car .godsmoneys{
+	font-size: 12px;
+	color: #940000;
+	width: 250px;
+	height: 45px;
+	line-height: 45px;
+	border: solid 1px white;
+	margin-top: 50px;
+}
+#car .tips{
+	font-size: 14px;
+	width: 250px;
+	height: 20px;
+border: solid 1px white;
+	margin-top: 30px;
+}
+#car .gotocar{
+	background: #940000;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	margin-top: 30px;
+	border: solid 1px white;
+}
+
+#header-title {
+	width: 100%;
+	height: 50px;
+	background: #464646;
+	min-width: 1000px;
+	position: relative;
+}
+
+#header-title dl.header {
+	width: 682px;
+	height: 50px;
+	margin: 0 auto;
+}
+#header-title dl.header>dd {
+	float: left;
+	width: 134px;
+	background: url(../img/jt2.png) no-repeat 60px 31px;
+}
+
+#header-title dl dd a {
+	line-height: 30px;
+	display: block;
+	width: 134px;
+	height: 50px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+
+
+#header-title dl.header dd a:hover {
+	text-decoration: underline;
+}
+
+#man {
+	width: 9999px;
+	height: 262px;
+	display: none;
+	position: relative;
+	right: 1800px;
+	background: white;
+	z-index: 9999;
+}
+
+#man dl {
+	width: 800px;
+	height: 130px;
+	margin-left: 1630px;
+}
+
+hr {
+	width: 9999px;
+	border-bottom: solid 1px #999999;
+	position: absolute;
+}
+
+#man dl dd {
+	float: left;
+	width: 130px;
+	height: 130px;
+}
+
+#man dl dd a {
+	display: block;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	color: black;
+}
+
+#man dl dd a span {
+	line-height: 220px;
+	font-size: 14px;
+}
+
+dd[class$=d]:hover span[class$=e] {
+	text-decoration: underline;
+	color: #999999;
+}
+
+#woman {
+	width: 9999px;
+	height: 260px;
+	display: none;
+	position: relative;
+	right: 1505px;
+	background: white;
+	z-index: 9999;
+}
+
+#woman dl {
+	width: 800px;
+	height: 130px;
+	margin-left: 1200px;
+}
+
+#woman dl dd {
+	float: left;
+	width: 130px;
+	height: 130px;
+}
+
+#woman dl dd a {
+	display: block;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	color: black;
+}
+
+#woman dl dd a span {
+	line-height: 220px;
+	font-size: 14px;
+}
+
+#son {
+	width: 9999px;
+	height: 130px;
+	display: none;
+	position: relative;
+	right: 1700px;
+	background: white;
+	z-index: 9999;
+}
+
+#son dl {
+	width: 800px;
+	height: 130px;
+	margin-left: 1400px;
+}
+
+#son dl dd {
+	float: left;
+	width: 130px;
+	height: 130px;
+}
+
+#son dl dd a {
+	display: block;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	color: black;
+}
+
+#son dl dd a span {
+	line-height: 220px;
+	font-size: 14px;
+}
+
+dd.cd_d {
+	background: url(../img/man1.jpg) no-repeat;
+}
+
+dd.cdd_d {
+	background: url(../img/man2.jpg) no-repeat;
+}
+
+dd.ts_d {
+	background: url(../img/man3.jpg) no-repeat;
+}
+
+dd.dd_d {
+	background: url(../img/man4.jpg) no-repeat;
+}
+
+dd.xcp_d {
+	background: url(../img/man5.jpg) no-repeat;
+}
+
+dd.yh_d {
+	background: url(../img/man6.jpg) no-repeat;
+}
+
+dd.jdk_d {
+	background: url(../img/man11.jpg) no-repeat;
+}
+
+dd.ck_d {
+	background: url(../img/man22.jpg) no-repeat;
+}
+
+dd.os_d {
+	background: url(../img/man33.jpg) no-repeat;
+}
+
+dd.as_d {
+	background: url(../img/man44.jpg) no-repeat;
+}
+
+dd.cs_d {
+	background: url(../img/man55.jpg) no-repeat;
+}
+
+dd.jp_d {
+	background: url(../img/man66.jpg) no-repeat;
+}
+
+dd.cd_dd {
+	background: url(../img/wm1.jpg) no-repeat;
+}
+
+dd.cdd_dd {
+	background: url(../img/wm2.jpg) no-repeat;
+}
+
+dd.ts_dd {
+	background: url(../img/wm3.jpg) no-repeat;
+}
+
+dd.dd_dd {
+	background: url(../img/wm4.jpg) no-repeat;
+}
+
+dd.ck_dd {
+	background: url(../img/wm22.jpg) no-repeat;
+}
+
+dd.os_dd {
+	background: url(../img/wm33.jpg) no-repeat;
+}
+
+dd.as_dd {
+	background: url(../img/wm44.jpg) no-repeat;
+}
+
+dd.cs_dd {
+	background: url(../img/wm55.jpg) no-repeat;
+}
+
+dd.jp_dd {
+	background: url(../img/wm66.jpg) no-repeat;
+}
+
+dd.yor_d {
+	background: url(../img/son1.jpg) no-repeat;
+}
+
+dd.xt_d {
+	background: url(../img/son2.jpg) no-repeat;
+}
+
+dd.et_d {
+	background: url(../img/son3.jpg) no-repeat;
+}
+
+dd.dt_d {
+	background: url(../img/son3.jpg) no-repeat;
+}
+dl.date form select{width: 90px;height: 40px;border: solid 1px #999999;margin-top: 10px;}
+#godscenter{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 200px;
+	height: 1100px;
+
+}
+#godscenter #godsleft{
+	float: left;
+	height: 1100px;
+	width: 180px;
+}
+#godsleft dl{cursor: pointer;
+	border: solid 1px white;margin-top: 10px;
+	width: 160px;height: 40px;line-height: 40px;font-size: 14px;
+}
+
+#godsleft dt{
+	margin-right: 5px;
+	float: left;
+}
+#godscontent{
+	margin-left: 50px;
+float: left;
+	width: 520px;height: 1100px;
+
+}
+#godscontent p{width: 480px;line-height: 40px; font-size: 24px;font-weight: bold;color: #333333;text-align: center;margin: 0 auto;}
+#godscontent p span{font-family: "agency fb";font-weight: bold;}
+  .box {
+        width: 460px;
+        height: 460px;
+        
+        margin-left: 30px;
+        position: relative;
+    }
+    .big {
+        width: 570px;
+        height: 510px;
+        position: absolute;
+        top: -110px;
+        left: -620px;
+        border: 2px solid #ccc;
+        overflow: hidden;
+        display: none;
+    }
+    .mask {
+        width: 145px;
+        height: 145px;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: move;
+        display: none;
+    }
+    .small {
+        position: relative;
+    }
+#godscontent dl{width: 500px;
+margin: 0 auto;
+height: 75px;border: solid 1px white;
+	margin-top: 10px;
+}
+#godscontent dl dd{float: left; width: 72px;height: 72px;margin-left: 22px;border: solid 1px while;}
+#godscontent ul{margin-top: 40px;}
+#godscontent ul li.liststyle{margin-left: 0px; list-style: none;font-size: 18px;font-weight: bold;margin-bottom: 20px;}
+
+#godscontent ul li{font-size: 12px;margin-left: 15px;color: #333333;}
+#godscontent h6{font-size: 18px;color: #333333;margin-bottom: 20px;margin-top: 30px;}
+#godscontent u{font-size: 12px;color: #333333;text-decoration: none;}
+#godscontent button{border: solid 1px #999999; width: 225px;height: 50px;background: black;margin-top: 40px;margin-left: 140px;cursor: pointer;}
+#godscontent button span{color: white;font-family: "agency fb";font-weight: bold;font-size: 18px;}
+#godsright{width: 210px;height: 500px;float: left;margin-left: 38px;}
+.cons{width: 50px;height: 50px;border: solid 1px #B7B7B7;margin-bottom: 30px;}
+#godsright dd{width: 210px;cursor: pointer;font-size: 14px;}
+#godsright dd.size{margin-top: 20px; width: 210px;height: 25px;}
+#godsright dd.size img{float: left;margin-right: 5px;}
+#godsright dd.size span{line-height: 25px;border-bottom: 2px solid #999999;}
+.computer{
+	width: 210px;
+	height: 150px;
+	border-top: 1px solid #999999;
+	margin-top: 20px;
+}
+.computer h4{font-size: 16px;margin-top: 20px;margin-bottom: 25px;}
+.computer span{ font-size: 12px;}
+.computer select{width: 100px; height: 30px;border: solid 1px #CCCCCC;margin-left: 15px;}
+.computer button{width: 200px;height: 50px;background: #940000;color: white;font-size: 16px;font-weight: bold;margin-top: 30px;margin-left: 5px;cursor: pointer;}
+.computer button:hover{background:rgba(148,0,0,0.5);}
+
+
+
+#Category {
+	
+	width: 1000px;
+	height: 550px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-top: solid 1px #999999;
+}
+#Category ul{list-style: none;}
+#Category a {
+	color: #333333;
+}
+
+#Category>ul>li {
+	height: 280px;
+	float: left;
+	margin-left: 50px;
+	text-align: center;
+}
+
+#Category>ul>li>a {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: -40px;
+}
+
+#Category>ul>li ul {
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+.font {
+	display: block;
+	font-weight: bold;
+	font-family: "agency fb";
+}
+
+#Category li {
+	margin-right: 40px;
+}
+
+li.oneuser ul {
+	margin-left: 150px;
+}
+
+li.twohelp ul {
+	margin-left: 50px;
+}
+
+li.threenike ul {
+	margin-left: 50px;
+}
+
+#Category a:hover {
+	color: #999999;
+}
+
+#copyright {
+	width: 100%;
+	height: 140px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: black;
+}
+
+#copyright ul {
+	width: 350px;
+	height: 20px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+
+#copyright ul li a {
+	float: left;
+	margin-left: 20px;
+	color: white;
+	font-size: 12px;
+}
+
+#copyright p img {
+	cursor: pointer;
+	margin-top: 15px;
+	margin-left: -170px;
+}
+
+#copyright dd {
+	font-size: 8px;
+	color: white;
+	float: left;
+}
+
+#copyright dl {
+	width: 800px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+#copyright dd.coone {
+	margin-top: 12px;
+}
+
+#copyright dd.cothree {
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+#copyright dd.cotwo {margin-top: 10px;}
+#copyright dd.cotwo img {
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+#copyright dd.cothree img {
+	margin-left: 5px;
+	vertical-align: middle;
+}

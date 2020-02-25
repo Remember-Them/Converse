@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>【男女同款】Chuck Taylor All Stars '70 高帮复古帆布——匡威 （CONVERSE）中国官网</title>
+		<link rel="icon" href="//image.converse.com.cn/images/favicon.ico" type="images/x-ico" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="css/3.css"/>
+
+	<body>
+		<div id="bg"
+        style="display: none; background-color: #000000; width: 100%; position: fixed; height: 100%; opacity: 0.8; z-index: 1;"></div>
+
+			<div id="llb">
+			<img src="img/llb.png" />
+		</div>
+		<div id="top">
+			<div id="header">
+				<a href="index.html" class="logo"><img src="img/logo.png" class="top" /></a>
+				<div id="right">
+					<a href="javascript:void(null)" class="LandRegistration">
+						<dd class="first">登录</dd>
+						<dd>/</dd>
+						<dd class="second">注册</dd>
+					</a>
+					<dd class="user">欢迎您，<span class="shows"></span></dd>
+					<dd class="landregistra_hid" title="登陆/注册">
+						<a href="javascript:void(null)" class="landregistraup"></a>
+
+					</dd>
+					<dd class="shoppCar">
+						<a href="Car.html">购物车</a>
+					</dd>
+					<dd class="Car"><img src="img/0.png" /></dd>
+					<dd class="chat_hid" title="聊天">
+						<a href="javascript:void(null)" class="chatup"></a>
+					</dd>
+					<dd class="search_hid" title="搜索">
+						<a href="javascript:void(null)" class="searchup"></a>
+					</dd>
+					<dd class="help_hid" title="帮助">
+						<a href="javascript:void(null)" class="helpup"></a>
+					</dd>
+				</div>
+			</div>
+			<div id="none"></div>
+			<div id="LandRegistration">
+				<div id="black"></div>
+				<div id="auto">
+					<div id="lefter">
+						<h2>还未注册?</h2>
+						<button class="change">
+								<p class="p1">注册用户</p>
+								<img src="img/1.png" class="change1"/>
+							</button>
+					</div>
+					<div id="content">
+						<h2>您可以直接登录</h2>
+						<img src="img/wb.png" class="wb" />
+						<img src="img/zfb.png" class="zfb" />
+					</div>
+					<div id="righter">
+						<h2>已经成为会员？</h2>
+						<input class="input" type="text" placeholder="邮箱/手机" id="Regisphone" onblur="isture()" />
+						<input class="input" type="text" placeholder="账户密码" id="Password" onblur="istures()" />
+						<button class="converse">
+								<div id="suprice">
+								</div>
+								<p>点击按钮进行验证</p>
+							</button>
+						<dd>一旦登录，即表明你同意匡威的<u>法律声明</u>和<u>使用规则</u></dd>
+						<button class="dl" onclick="land()">
+								<p class="p2">登录</p>
+								<img src="img/1.png" class="change2"/>
+							</button>
+						<input class="input1" type="checkbox" id="checkbox" checked="checked" />
+						<label for="checkbox"></label>
+						<dd class="lin">
+							<span>记住登录名</span>
+							<u>忘记密码?</u>
+						</dd>
+					</div>
+				</div>
+				<div id="autoo">
+					<dl class="phone">
+						<dt>手机号码 <span>*</span></dt>
+						<dd><input type="text" placeholder="135xxxx3333" name="same" id="Landphone" onblur="istext()" /></dd>
+						<dd class="show"></dd>
+					</dl>
+					<dl class="email">
+						<dt>邮箱 <span>*</span></dt>
+						<dd><input type="text" placeholder="example@converse.com"name="same" id="Email"onblur="istext_one()" /></dd>
+						<dd class="show"></dd>
+					</dl>
+					<dl class="sex">
+						<dt>性别 <span>*</span></dt>
+						<dd>
+							<input type="radio" class="gosradio" id="mans" name="lnk" checked="checked" />Boy
+							<label for="mans"></label>
+							<input type="radio" class="gosradio" id="womans" name="lnk" />Girl
+							<label for="womans"></label>
+						</dd>
+					</dl>
+					<dl class="pas1">
+						<dt>输入密码 <span>*</span></dt>
+						<dd><input type="text" placeholder="密码至少为6位字符" name="same"id="Passone" onblur="istext_two()" /></dd>
+						<dd class="show"></dd>
+					</dl>
+					<dl class="pas2">
+						<dt>确认密码 <span>*</span></dt>
+						<dd><input type="text" placeholder="请再次输入密码"name="same" id="Passtwo" onblur="istext_three()" /></dd>
+						<dd class="show"></dd>
+					</dl>
+					<dl class="date">
+						<dt>生日（年-月-日） <span>*</span></dt>
+						<form name="reg_testdate">
+							<select name="YYYY" onchange="YYYYDD(this.value)">
+								<option value="">请选择 年</option>
+							</select>
+							<select name="MM" onchange="MMDD(this.value)">
+								<option value="">选择 月</option>
+							</select>
+							<select name="DD">
+								<option value="">选择 日</option>
+							</select>
+						</form>
+					</dl>
+					<dl class="test">
+						<button class="converse">
+								<div id="suprice">
+								</div>
+								<p>点击按钮进行验证</p>
+							</button>
+					</dl>
+					<dl class="get">
+						<dt>验证码<span>*</span></dt>
+						<input class="manner1" type="text" id="inputCode"name="same" onblur="istext_four()" placeholder="请输入验证码" />
+
+						<input class="manner2" type="button" value="点击获取验证码" onclick="createCode()" />
+						<dd class="show"></dd>
+						<div class="code" id="checkCode"></div>
+					</dl>
+					<dl class="goto">
+						<dt>一旦创建账户，即表明你同意匡威的<u>法律声明</u>和<u>使用规则</u></dt>
+						<dd>
+							<button class="gogo">
+								<p class="pp" onclick="gotoland()">注册账户</p>
+								<img src="img/1.png" class="gogogo"/>
+							</button></dd>
+					</dl>
+				</div>
+			</div>
+			<div id="header-title">
+				<dl class="header">
+
+					<dd class="man">
+						<a href="javascript:void(null)">男的</a>
+						<div id="man">
+							<dl>
+
+								<dd class="cd_d">
+									<a href="javascript:void(null)"><span class="color_e">踩的</span></a>
+								</dd>
+								<dd class="cdd_d">
+									<a href="javascript:void(null)"><span class="color_e">穿的</span></a>
+								</dd>
+								<dd class="ts_d">
+									<a href="javascript:void(null)"><span class="color_e">T恤</span></a>
+								</dd>
+								<dd class="dd_d">
+									<a href="javascript:void(null)"><span class="color_e">戴的</span></a>
+								</dd>
+								<dd class="xcp_d">
+									<a href="javascript:void(null)"><span class="color_e">新产品</span></a>
+								</dd>
+								<dd class="yh_d">
+									<a href="javascript:void(null)"><span class="color_e">优惠</span></a>
+								</dd>
+							</dl>
+							<hr />
+							<dl>
+								<dd class="jdk_d">
+									<a href="javascript:void(null)"><span class="color_e">经典款</span></a>
+								</dd>
+								<dd class="ck_d">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">CHUCK 70</span></a>
+								</dd>
+								<dd class="os_d">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">ONE STAR</span></a>
+								</dd>
+								<dd class="as_d">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">ALL STAR</span></a>
+								</dd>
+								<dd class="cs_d">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">CONS</span></a>
+								</dd>
+								<dd class="jp_d">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">JACK PURCELL</span></a>
+								</dd>
+							</dl>
+
+						</div>
+					</dd>
+					<dd class="woman">
+						<a href="javascript:void(null)">女的</a>
+						<div id="woman">
+							<dl class="bottom">
+
+								<dd class="cd_dd">
+									<a href="javascript:void(null)"><span class="color_e">踩的</span></a>
+								</dd>
+								<dd class="cdd_dd">
+									<a href="javascript:void(null)"><span class="color_e">穿的</span></a>
+								</dd>
+								<dd class="ts_dd">
+									<a href="javascript:void(null)"><span class="color_e">T恤</span></a>
+								</dd>
+								<dd class="dd_dd">
+									<a href="javascript:void(null)"><span class="color_e">戴的</span></a>
+								</dd>
+								<dd class="xcp_d">
+									<a href="javascript:void(null)"><span class="color_e">新产品</span></a>
+								</dd>
+								<dd class="yh_d">
+									<a href="javascript:void(null)"><span class="color_e">优惠</span></a>
+								</dd>
+							</dl>
+							<hr />
+							<dl>
+								<dd class="jdk_d">
+									<a href="javascript:void(null)"><span class="color_e">经典款</span></a>
+								</dd>
+								<dd class="ck_dd">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">CHUCK 70</span></a>
+								</dd>
+								<dd class="os_dd">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">ONE STAR</span></a>
+								</dd>
+								<dd class="as_dd">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">ALL STAR</span></a>
+								</dd>
+								<dd class="cs_dd">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">CONS</span></a>
+								</dd>
+								<dd class="jp_dd">
+									<a href="javascript:void(null)"><span class="color_e" style="font-weight:   bold;">JACK PURCELL</span></a>
+								</dd>
+							</dl>
+
+						</div>
+					</dd>
+					<dd class="son">
+						<a href="javascript:void(null)">儿童</a>
+						<div id="son">
+							<dl>
+								<dd class="yor_d">
+									<a href="javascript:void(null)"><span class="color_e">&nbsp;(1-4岁)&nbsp;</span></a>
+								</dd>
+								<dd class="xt_d">
+									<a href="javascript:void(null)"><span class="color_e">&nbsp;(4-8岁)&nbsp;</span></a>
+								</dd>
+								<dd class="et_d">
+									<a href="javascript:void(null)"><span class="color_e">&nbsp;(4-12岁)&nbsp;</span></a>
+								</dd>
+								<dd class="dt_d">
+									<a href="javascript:void(null)"><span class="color_e">&nbsp;(8-12岁)&nbsp;</span></a>
+								</dd>
+							</dl>
+						</div>
+					</dd>
+					<dd class="other">
+						<a href="javascript:void(null)">联名合作款</a>
+					</dd>
+					<dd class="other">
+						<a href="javascript:void(null)">店铺分布</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+			<div id="godscenter">
+			<div id="godsleft">
+				<dl class="leftone">
+					<dt><img src="img/fenxiang.png"/></dt>
+					<dd>分享</dd>
+				</dl>
+				<dl class="lefttwo">
+					<dt><img src="img/aixin.png"/></dt>
+					<dd>加入收藏(999+)</dd>
+				</dl>
+				<dl><img src="img/xingxing.png"/></dl>
+			</div>
+			<div id="godscontent">
+				<p>【男女同款】<span>Chuck Taylor All Star '70</span> 高帮复古帆布  中性<br />价格 <span>¥569.00</span></p>
+			
+				<div class="box" id="boxer" >
+   			 <div class="small">
+      	  <img src="img/cons0.png"  class="imgg"/>
+       	 <div class="mask"></div>
+   		 </div>
+   				 <div class="big">
+      			  <img src="img/cons00.png"   class="imggg"/>
+   			 </div>
+			</div>
+			<dl>
+				<dd class="con1"><img src="img/cons000.png" /></dd>
+				<dd class="con2"><img src="img/cons111.png" /></dd>
+				<dd class="con3"><img src="img/cons222.png" /></dd>
+				<dd class="con4"><img src="img/cons333.png" /></dd>
+				<dd class="con5"><img src="img/cons444.png" /></dd>
+			</dl>
+			<ul>
+				<li class="liststyle">板鞋/休闲鞋</li>
+			</ul>
+			<h6>价格说明（此说明仅当出现价格比较时有效）</h6>
+			<u>划线价格：划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考。</u><br />
+			<u>未划线价格：未划线的价格是商品在官网上的销售标价，具体的成交价格可能因为会员使用优惠券发生变化，最终以订单结算页价格为准。</u><br />
+			<button class="change3"><span class="change33">One Star</span></button>
+			</div>
+				<div id="godsright">
+					<div class="cons" style="border: none;">
+						<img src="img/cons000.png" />
+					</div>
+					<dd>色：黑色</dd>
+					<dd>型号：162050C001</dd>
+					<dd class="size"><img src="img/rightjt.png" /><span>尺码对照表</span></dd>
+					<div class="computer">
+							<h4>尺码换算器</h4>
+							<span>请输入您的尺码</span>
+							<select name="" id="">
+								<option value="">请选择尺码</option>
+								<option value="">35</option>
+								<option value="">36</option>
+								<option value="">36.5</option>
+								<option value="">37</option>
+								<option value="">37.5</option>
+								<option value="">38</option>
+								<option value="">39</option>
+								<option value="">39.5</option>
+								<option value="">40</option>
+								<option value="">41</option>
+								<option value="">41.5</option>
+								<option value="">42</option>
+								<option value="">42.5</option>
+								<option value="">43</option>
+								<option value="">44</option>
+								<option value="">44.5</option>
+								<option value="">45</option>
+								<option value="" style="color: #999999;">46</option>
+							</select>
+							<br />
+							<br />
+							<br />
+							<span>数量&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<select name="" id="">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+							</select>
+							<button class="buy">立即购买</button>
+					</div>
+				</div>
+				</div>
+				<div id="Category">
+			<ul>
+				<li>
+					<a href="javascript:void(null)">男的</a>
+					<ul class="font">
+						<li>
+							<a href="javascript:void(null)">CHUCK TAYLOR ALL STAR</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">CONVERSE CONS</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">JACK PURCELL</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">CHUCK II</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:void(null)">踩的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">穿的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">戴的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">优惠</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(null)">女的</a>
+					<ul class="font">
+						<li>
+							<a href="javascript:void(null)">CHUCK TAYLOR ALL STAR</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">CONVERSE CONS</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">JACK PURCELL</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">CHUCK II</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:void(null)">踩的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">穿的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">戴的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">优惠</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(null)">儿童</a>
+					<ul class="font">
+						<li>
+							<a href="javascript:void(null)">CHUCK TAYLOR ALL STAR</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">CONVERSE CONS</a>
+						</li>
+					</ul>
+					<ul style="margin-top: 62px;">
+						<li>
+							<a href="javascript:void(null)">踩的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">穿的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">戴的</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">优惠</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(null)" style="font-family: 'agency fb';">GLOBAL</a>
+					<ul class="font">
+						<li>
+							<a href="javascript:void(null)">CHUCK TAYLOR ALL SITES</a>
+						</li>
+					</ul>
+				</li>
+				<li class="oneuser">
+					<a href="javascript:void(null)" style="margin-left: 110px; ">我有账户</a>
+					<ul>
+						<li>
+							<a href="javascript:void(null)">现有订单</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">过去订单</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">退换货</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">账户设置</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">地址簿</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">我的优惠券</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">我的收藏</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">我的评论</a>
+						</li>
+					</ul>
+				</li>
+				<li class="twohelp">
+					<a href="javascript:void(null)" style="margin-left: 15px; ">帮助和购物指南</a>
+					<ul>
+						<li>
+							<a href="javascript:void(null)">账户</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">订单</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">尺码</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">退货和退款</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">换货</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">配送</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">联系我们</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">常见问题</a>
+						</li>
+					</ul>
+				</li>
+				<li class="threenike">
+					<a href="javascript:void(null)" style="font-family: 'agency fb'; margin-left: 10px; ">NIKE</a>
+					<ul class="font">
+						<li>
+							<a href="javascript:void(null)">NIKE+</a>
+						</li>
+						<li>
+							<a href="javascript:void(null)">JORDAN</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="copyright">
+			<ul style="list-style: none;">
+				<li>
+					<a href="javascript:void(null)" class="we">关于我们</a>
+				</li>
+				<li>
+					<a href="javascript:void(null)">帮助和购物指南</a>
+				</li>
+				<li>
+					<a href="javascript:void(null)">法律声明</a>
+				</li>
+				<li>
+					<a href="javascript:void(null)">使用规则</a>
+				</li>
+			</ul>
+
+			<p><img src="img/logobt.png" /></p>
+			<dl>
+				<dd class="coone">@匡威体育用品（中国）有限公司 保留所有权利 沪ICP备11044134号-2 </dd>
+				<dd class="cotwo"><img src="img/jh.png" />沪公网安备 31011002001667号</dd>
+				<dd class="cothree"><img src="img/jh2.png" />电子营业执照 公司证照</dd>
+			</dl>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/3.js"></script>
+</html>

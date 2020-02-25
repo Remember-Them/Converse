@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="icon" href="//image.converse.com.cn/images/favicon.ico" type="images/x-ico" />
+	<title>欢迎来到匡威</title>
+</head>
+<body>
+	<div style="position: fixed;color: white; top: 90%;left: 60%; font-size: 30px;z-index: 999999999999;">Welcome to Converse <br />&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loading……</div>
+	<div style="position: fixed;color: white; top: 94%;left: 75%; font-size: 30px;z-index: 999999999999;cursor: pointer;" id="id8"></div>
+	<div class="popup-container">
+		<div class="img-flex"></div>
+	</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/fragment.js"></script>
+<script type="text/javascript">
+$(function() {
+	var fragmentConfig = {
+		container : '.img-flex',//显示容器
+		line : 10,//多少行
+		column : 24,//多少列
+		width : 1000,//显示容器的宽度
+		animeTime : 10000,//最长动画时间,图片的取值将在 animeTime*0.33 + animeTime*0.66之前取值 
+		img : 'img/timg.jpg'//图片路径
+	};
+	fragmentImg(fragmentConfig);
+	$("#id8").click(function(){
+		window.location.href="index.html";
+	})
+});
+var time=10;
+var	timer=setInterval('tiaozhuan()',1000);
+function tiaozhuan(){
+var t= document.getElementById("id8");
+if(time>0){
+t.innerHTML=time;
+time--;
+}else {
+clearInterval(timer);
+location.href="index.html";
+}
+}
+</script>
+
+</body>
+</html>
